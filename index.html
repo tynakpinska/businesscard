@@ -7,26 +7,28 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="index.css">
         <link rel="stylesheet" href="css/fontello.css">
+        <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:600,700&amp;subset=latin-ext" rel="stylesheet">
     </head>
     <body>
-        <aside class="container">
+        <div class="container">
             <header>
+                <div class="img-header"></div>
+                <div class="decoration"></div>
                 <nav>
-                    <div class="decoration"></div> <!-- Blue field with Hello World -->
                     <ul>
-                        <a href="#about"><li>About me</li></a>
-                        <a href="#skills"><li>Skills</li></a>
-                        <a href="#portfolio"><li>Portfolio</li></a>
-                        <a href="#contact"><li>Contact</li></a>
+                        <li><a href="#about">About me</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#contact">Contact</a></li>
                     </ul>
                 </nav>
                 <div class="intro">
                     <h1>Hi there!</h1>
-                    <h2>My name is Cute Wiener</h2>
+                    <h2>My name is <span>Cute Wiener</span></h2>
                     <p>I am front-end developer</p>
                     <p>Lorem ipsum dolor sit amet.</p>
                 </div>
-                <img src="">
+                <img src="img/dog.jpg">
                 <aside>
                     <h5>Useful links</h5>
                     <i class="demo-icon icon-twitter-circled"></i>
@@ -36,8 +38,8 @@
                 </aside>
                 <div class="offer">
                     <h2>Let me know how can I help you with your projects!</h2>
-                    <a href="#"><div>Contact me!</div></a>
-                    <a href="#"><div>Check my CV</div></a>
+                    <a href="#"><div class="button contactme">Contact me!</div></a>
+                    <a href="#"><div class="button check">Check my CV</div></a>
                 </div>
             </header>
             <main>
@@ -47,31 +49,32 @@
                         <div class="info">
                         </div>
                         <div class="text">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus commodi dolorum officia hic? Explicabo, maiores quia. Commodi temporibus illo, asperiores quaerat placeat id est aliquam ad aut obcaecati doloremque rerum? Praesentium, maiores eveniet amet obcaecati, rem accusamus mollitia tempora quod vel dolorum esse vero nisi assumenda commodi sit, repellat inventore.</p>
                         </div>
                     </div>
                 </div>
                 <div class="skills">
                     <h3>Skills</h3>
-                    <div class="box-skills">
-                        <div class="hard">
-                            <h4>Hard ones</h4>
-                            <label for="html">hmtl</label>
-                            <input type="range" name="html" min="0" max="5" disabled value="4">
-                            <label for="css">css</label>
-                            <input type="range" name="css" min="0" max="5" disabled value="4">
-                            <label for="javascript">javascript</label>
-                            <input type="range" name="javascript" min="0" max="5" disabled value="3">
+                        <div class="box-skills">
+                            <div class="hard">
+                                <h4>Hard ones</h4>
+                                <label for="html">hmtl</label>
+                                <input type="range" name="html" min="0" max="5" disabled value="4">
+                                <label for="css">css</label>
+                                <input type="range" name="css" min="0" max="5" disabled value="4">
+                                <label for="javascript">javascript</label>
+                                <input type="range" name="javascript" min="0" max="5" disabled value="3">
+                            </div>
+                            <div class="soft">
+                                <h4>Soft ones</h4>
+                                <label for="barking">barking</label>
+                                <input type="range" name="barking" min="0" max="5" disabled value="5">
+                                <label for="tail">tail waving</label>
+                                <input type="range" name="tail" min="0" max="5" disabled value="4">
+                                <label for="patience">patience</label>
+                                <input type="range" name="patience" min="0" max="5" disabled value="3">
+                            </div>
                         </div>
-                        <div class="soft">
-                            <h4>Soft ones</h4>
-                            <label for="barking">barking</label>
-                            <input type="range" name="barking" min="0" max="5" disabled value="5">
-                            <label for="tail">tail waving</label>
-                            <input type="range" name="tail" min="0" max="5" disabled value="4">
-                            <label for="patience">patience</label>
-                            <input type="range" name="patience" min="0" max="5" disabled value="3">
-                        </div>
-                    </div>
                 </div>
                 <div class="portfolio">
                     <h3>Portfolio</h3>
