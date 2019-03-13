@@ -104,7 +104,6 @@ header {
     padding: 0 10px;
 }
 
-
 aside {
     position: absolute;
     top: 88%;
@@ -450,7 +449,6 @@ textarea::placeholder {
 
 /* FOOTER */
 
-
 footer {
     text-align: center;
     font-size: calc(12px + 0.2vw);
@@ -619,5 +617,41 @@ input[type=range]::-moz-range-thumb {
 
     .img-header p {
         display: none;
+    }
+}
+
+@media (max-height: 500px) {
+
+    header img {
+        top: 20%;
+        left: 40%;
+        width: calc(70px + 10vw);
+    }
+
+    .intro {
+        top: 50%;
+    }
+
+    aside {
+        top: 80%;
+        color: var(--maincolor);
+    }
+
+    aside a:visited, aside a:link {
+        color: var(--maincolor);
+    }
+
+    aside a:hover {
+        color: rgb(63, 13, 1);
+    }
+
+    ul {
+        flex-direction: row;
+    }
+
+    .img-header p {
+        top: 62%;
+        left: 5%;
+        font-size: calc(16px + 2vw);
     }
 }
