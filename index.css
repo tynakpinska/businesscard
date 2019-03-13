@@ -2,56 +2,58 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    scroll-behavior: smooth;
 }
 
 :root {
-    --maincolor: rgb(49, 48, 116);
-    --anothercolor: rgb(243, 154, 39);
+    --maincolor: rgb(178, 32, 0);
+    --anothercolor: rgb(30, 96, 255);
     --boxcolor: rgb(242, 241, 247);
     --darkerfont: rgb(19, 17, 17);
     --lighterfont: rgb(102, 93, 93);
     --boxshadow: rgb(216, 209, 209);
+    --backgroundcolor: rgb(219, 219, 233);
 }
 
 body {
     font-family: 'Rubik', sans-serif;
     color: var(--darkerfont);
-    font-size: calc(12px + 0.3vw);
+    font-size: calc(14px + 0.3vw);
 }
 
 .container {
-    background-color: rgb(219, 219, 233);
+    background-color: var(--backgroundcolor);
 }
 
 main {
-    background-color: rgb(219, 219, 233);
+    background-color: var(--backgroundcolor);
 }
 
 h1 {
-    font-size: calc(16px + 3vw);
+    font-size: calc(18px + 3vw);
     padding: 10px;
 }
 
 h2 {
-    font-size: calc(14px + 2vw);
+    font-size: calc(12px + 2vw);
     padding: 10px;
 }
 
 h3 {
-    font-size: calc(14px + 1vw);
+    font-size: calc(16px + 1vw);
     text-align: center;
     padding: 40px 0 20px 0;
 }
 
 h4 {
     text-align: center;
-    font-size: calc(10px + 1vw);
+    font-size: calc(12px + 1vw);
     padding-bottom: 30px;
 }
 
 h5 {
     text-align: left;
-    font-size: calc(10px + 0.8vw);
+    font-size: calc(12px + 0.8vw);
 }
 
 span {
@@ -86,16 +88,16 @@ header {
     position: absolute;
     right: 5%;
     top: 40%;
-    font-size: calc(14px + 1vw);
+    font-size: calc(16px + 3vw);
     color: #fff;
     transform: matrix(0.866, 0.8, -0.8, 0.866, 0, 0);
 }
 
 .intro {
+    width: 50%;
     position: absolute;
     top: 50%;
     left: calc(20px + 5vw);
-    width: 50%;
 }
 
 .intro p {
@@ -109,19 +111,26 @@ aside {
     right: 2%;
     color: #fff;
     line-height: 2rem;
-    font-size: calc(14px + 0.2vw);
+}
+
+aside i {
+    font-size: calc(14px + 0.4vw);
 }
 
 aside h5 {
-    font-size: calc(14px + 0.2vw);
+    font-size: calc(12px + 0.4vw);
 }
 
 aside a {
     transition: all 1s ease-in-out;
 }
 
+aside a:visited {
+    color: #fff;
+}
+
 aside a:hover {
-    color: var(--darkerfont);
+    color: rgb(63, 13, 1);
 }
 
 .decoration {
@@ -144,8 +153,8 @@ nav {
 
 ul {
     display: flex;
-    list-style: none;
     justify-content: end;
+    list-style: none;
 }
 
 li {
@@ -157,18 +166,22 @@ li a {
     transition: all 0.3s ease-in-out;
 }
 
+li a:visited {
+    color: #fff;
+}
+
 li a:hover {
-    color: rgb(63, 62, 151);
+    color: rgb(63, 13, 1);
 }
 
 header img {
     border-radius: 50%;
     position: absolute;
-    top: 20%;
-    right: 30%;
-    box-shadow: 3px 3px 15px 3px rgb(83, 83, 85);
+    top: 30%;
+    right: 32%;
+    box-shadow: 3px 3px 15px 3px rgb(63, 13, 1);
     filter: contrast(100%);
-    width: calc(150px + 10vw);
+    width: calc(70px + 10vw);
 }
 
 .offer {
@@ -188,11 +201,17 @@ header img {
 
 .contactme {
     background-color: var(--maincolor);
+    color: #fff;
     transition: all 0.2s ease-in-out;
 }
 
 .contactme:hover {
     background-color: var(--anothercolor);
+}
+
+.contactme:visited {
+    background-color: var(--maincolor);
+    color: #fff;
 }
 
 .check {
@@ -204,6 +223,11 @@ header img {
 .check:hover {
     color: var(--anothercolor);
     border: 1px solid var(--anothercolor);
+}
+
+.check:visited {
+    border: 1px solid var(--maincolor);
+    color: var(--maincolor);
 }
 
 /* ABOUT */
@@ -256,7 +280,7 @@ header img {
     padding: 30px 70px;
     width: 48%;
     box-shadow: 1px 3px 15px 2px var(--boxshadow);
-    font-size: calc(12px + 0.5vw);
+    font-size: calc(14px + 0.5vw);
 }
 
 input, label {
@@ -291,7 +315,7 @@ input, label {
     text-align: center;
     width: 50%;
     color: var(--boxcolor);
-    font-size: calc(30px + 0.5vw);
+    font-size: calc(32px + 0.5vw);
     opacity: 0;
     z-index: 1;
     transition: all 2s ease-in-out;
@@ -324,7 +348,7 @@ input, label {
 
 .text-project p {
     color: var(--lighterfont);
-    font-size: calc(10px + 0.2vw);
+    font-size: calc(12px + 0.2vw);
     padding: 15px 0 0 0;
 }
 
@@ -337,6 +361,7 @@ input, label {
     margin: 20px auto;
     background-color: var(--boxcolor);
     padding: 50px;
+    height: 100vh;
 }
 
 .text-contact {
@@ -344,7 +369,7 @@ input, label {
     color: var(--boxcolor);
     width: 30%;
     padding: 20px 90px 20px 20px;
-    font-size: calc(10px + 0.4vw);
+    font-size: calc(12px + 0.4vw);
     position: relative;
     box-shadow: 1px 3px 15px 2px rgb(161, 156, 156);
 }
@@ -368,19 +393,23 @@ input, label {
 }
 
 .data-contact i {
-    font-size: calc(10px + 0.4vw);
+    font-size: calc(16px + 0.4vw);
 }
 
 .data-contact a {
     transition: all 1s ease-in-out;
 }
 
+.data-contact a:visited {
+    color: #fff;
+}
+
 .data-contact a:hover {
-    color: var(--darkerfont);
+    color: rgb(63, 13, 1);
 }
 
 .form-contact {
-    background-color: rgb(219, 219, 233);
+    background-color: var(--backgroundcolor);
     width: 70%;
     padding: 50px 90px;
     box-shadow: 1px 3px 15px 2px rgb(161, 156, 156);
@@ -388,25 +417,31 @@ input, label {
 
 .form-contact h3 {
     color: var(--maincolor);
-    font-size: calc(16px + 0.6vw);
+    font-size: calc(18px + 0.6vw);
     text-align: left;
     padding: 0;
 }
 
 .form-contact input, .form-contact textarea {
-    background-color: rgb(219, 219, 233);
+    background-color: var(--backgroundcolor);
     border-top: none;
     border-left: none;
     border-right: none;
     border-bottom: 1px solid var(--maincolor);
     padding-top: 40px;
     font-family: 'Source Sans Pro', sans-serif;
-    font-size: calc(10px + 0.4vw);
+    font-size: calc(12px + 0.4vw);
     width: 100%;
 }
 
 textarea {
-    display: block;
+    height: 200px;
+    position: relative;
+}
+
+textarea::placeholder {
+    position: absolute;
+    bottom: 0;
 }
 
 .submit {
@@ -418,10 +453,10 @@ textarea {
 
 footer {
     text-align: center;
-    font-size: calc(10px + 0.2vw);
+    font-size: calc(12px + 0.2vw);
     padding-bottom: 20px;
     color: var(--lighterfont);
-    background-color: rgb(219, 219, 233);
+    background-color: var(--backgroundcolor);
 }
 
 /* INPUT RANGE */
@@ -433,7 +468,7 @@ input[type=range] {
     background: transparent;
 }
 
-/* CHROME itp. */
+/* CHROME etc. */
 
  input[type=range]::-webkit-slider-runnable-track {
     width: 100%;
@@ -468,7 +503,7 @@ input[type=range]::-moz-range-track {
 }
 
 input[type=range]::-moz-range-progress {
-    background: linear-gradient(90deg, var(--maincolor), #86afff);
+    background: linear-gradient(90deg, var(--maincolor), rgb(255, 143, 29));
     height: 9.7px;
     border-radius: 25px;
 }
@@ -479,30 +514,66 @@ input[type=range]::-moz-range-thumb {
     height: 20px;
     width: 20px;
     border-radius: 50px;
-    background: #4442a1;
+    background: var(--maincolor);
 }
 
 /* MEDIA QUERIES */
 
-@media (max-width: 1070px) {
+@media (max-width: 1200px) {
     .box-about {
     flex-wrap: wrap;
     }
 
-    .info,
-    .text {
+    .info,.text {
         min-width: 100%;
         margin-top: 20px;
     }
+
+    .text {
+        border-top: 3px solid var(--maincolor);
+    }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 880px) {
+
+    .decoration {
+    width: 100%;
+    height: 50vh;
+    color: #fff;
+    position: absolute;
+    top: 0;
+    }
+
+    .img-header p {
+    position: absolute;
+    top: 20%;
+    right: 20%;
+    color: #fff;
+    transform: matrix(0.866, 0.8, -0.8, 0.866, 0, 0);
+    }
+
+    .intro {
+        width: 80%;
+        top: 60%;
+    }
+
+    header img {
+        top: 8%;
+        left: 10%;
+        width: calc(100px + 11vw);
+    }
+
+    aside {
+        position: absolute;
+        top: 40%;
+    }
 
     ul {
         flex-direction: column;
     }
+
     .form-contact {
-        padding: 20px;
+        padding: 30px;
         margin: 0 auto;
     }
 
@@ -515,13 +586,7 @@ input[type=range]::-moz-range-thumb {
         margin: 0;
     }
 
-}
-
-@media (max-width: 600px) {
-    .hard,
-    .soft,
-    .text-contact,
-    .form-contact {
+    .hard,.soft, .text-contact, .form-contact {
         min-width: 100%;
         margin-top: 20px;
     }
@@ -530,23 +595,29 @@ input[type=range]::-moz-range-thumb {
         flex-wrap: wrap;
     }
 
+    .contact {
+        height: auto;
+    }
 
-   
 }
 
-@media (max-width: 400px) {
+
+@media (max-width: 500px) {
     .info, .text {
         padding: 5px;
         margin: 0 auto;
     }
 
-    .soft,
-    .hard {
+    .soft, .hard {
         padding: 20px;
         margin: 0 auto;
     }
 
     .soft {
         margin-top: 20px;
+    }
+
+    .img-header p {
+        display: none;
     }
 }
